@@ -60,9 +60,9 @@ variable "source_bucket" {
 }
 
 variable "filter_prefix" {
-  //default = "upload/"
+  default = ""
 }
 
 variable "filter_suffix" {
-  //default = "*.log"
+  default = ""
 }
