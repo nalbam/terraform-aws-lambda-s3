@@ -12,7 +12,11 @@ module "lambda" {
   handler = "index.handler"
   memory_size = 512
   timeout = 5
-  bucket = "bucket_name"
-  package = "data/demo.zip"
+  s3_bucket = "deploy_bucket_name"
+  s3_key = "deploy/latest.zip"
+
+  source_bucket = "source_bucket_name"
+  filter_prefix = "upload/"
+  filter_suffix = "*.log"
 }
 ```
