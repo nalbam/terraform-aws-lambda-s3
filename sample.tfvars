@@ -7,7 +7,7 @@ handler = "index.handler"
 s3_bucket = "sample"
 s3_key = "sample"
 
-source_bucket = "source_bucket_name"
+source_bucket = "repo.nalbam.com"
 filter_prefix = "upload/"
 filter_suffix = ""
 
