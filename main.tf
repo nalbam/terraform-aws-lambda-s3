@@ -1,5 +1,9 @@
 # Lambda Function : s3 > lambda
 
+data "aws_s3_bucket" "source" {
+  bucket = "${var.source_bucket}"
+}
+
 module "lambda" {
   source = "git::https://github.com/nalbam/terraform-aws-lambda.git"
   region = "${var.region}"
@@ -14,10 +18,6 @@ module "lambda" {
   s3_bucket = "${var.s3_bucket}"
   s3_key = "${var.s3_key}"
   env_vars = "${var.env_vars}"
-}
-
-data "aws_s3_bucket" "source" {
-  bucket = "${var.source_bucket}"
 }
 
 resource "aws_s3_bucket_notification" "default" {
