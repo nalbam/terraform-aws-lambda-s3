@@ -60,7 +60,7 @@ variable "source_bucket" {
 }
 
 variable "filter_prefix" {
-  default = ""
+  default = "origin/"
 }
 
 variable "filter_suffix" {
