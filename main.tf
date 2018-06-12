@@ -16,6 +16,7 @@ module "lambda" {
   memory_size = "${var.memory_size}"
   timeout = "${var.timeout}"
   s3_bucket = "${var.s3_bucket}"
+  s3_source = "${var.s3_source}"
   s3_key = "${var.s3_key}"
   env_vars = "${var.env_vars}"
 }
