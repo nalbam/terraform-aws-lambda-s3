@@ -41,6 +41,5 @@ resource "aws_lambda_permission" "default" {
   function_name = "${module.lambda.arn}"
   principal     = "s3.amazonaws.com"
   statement_id  = "AllowExecutionFromS3Bucket"
-
-  source_arn = "${data.aws_s3_bucket.source.arn}"
+  source_arn    = "${data.aws_s3_bucket.source.arn}"
 }
