@@ -1,7 +1,8 @@
 # terraform-aws-lambda-s3
 
 ## usage
-```
+
+```hcl
 module "resize-s3" {
   source = "git::https://github.com/nalbam/terraform-aws-lambda-s3.git"
   region = "${var.region}"
