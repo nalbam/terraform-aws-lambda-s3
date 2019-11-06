@@ -1,13 +1,13 @@
-name = "demo"
+name  = "demo"
 stage = "dev"
 
-runtime = "nodejs6.10"
+runtime = "nodejs10.x"
 handler = "index.handler"
 
 s3_bucket = "sample"
-s3_key = "sample"
+s3_key    = "sample"
 
-source_bucket = "virginia.nalbam.com"
+source_bucket = "upload.nalbam.com"
 filter_prefix = "upload/"
 filter_suffix = ""
 
